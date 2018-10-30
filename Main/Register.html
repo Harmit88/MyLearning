@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Register</title>
+<link rel="stylesheet" type="text/css" href="style2.css" media="screen">
+</head>
+<body background>
+<form method="POST" action="Signin_page.html" id="Registration form">
+<div align="center">
+<center><h2> User Registration </h2></center>
+<fieldset>
+<br>
+<br>
+<br>
+<!-- <legend><h1>User Registration</h1></legend> -->
+<p align="left">
+First Name<span style="color:red">*</span><input type="text" name="fname" id="fname" />
+<br><span id="fnameError"></span>
+<br>
+Last Name<span style="color:red">*</span><input type="text" name="lname" id="lname" />
+<br><span id="lnameError"></span>
+<br>
+<!--Gender<span style="color:red">*</span><input type="radio" id="Female">Female</input><input type="radio" id="male">Male</input>
+<span id="genderError"></span>
+<br><br>-->
+Email<span style="color:red">*</span><input type="email" name="emailid" id="Email" />
+<br><span id="emailError"></span>
+<br>
+Password<span style="color:red">*</span><input type="password" name="passwd" id="passwd1" />
+<br><span id="passwd1Error"></span>
+<br>
+Re-enter password<span style="color:red">*</span> <input type="password" name="passwd" id="passwd2">
+<br><span id="passwd2Error"></span>
+<span id="finalpassCheck"></span>
+<br>
+<input type="button" value="Submit" onclick="registerValidation();">
+</p>
+</fieldset>
+</div>
+</form>
+<script type="text/javascript" src="validation1.js"></script>
+</body>
+</html>

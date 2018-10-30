@@ -1,0 +1,41 @@
+fieldset	
+{
+display:block;
+width:500px;
+height:200px;
+margin:50px auto;
+background-color : #6bdaff;
+border-style : hidden;
+clear:both;	
+}
+span
+{
+color:red;
+font-size: 11px;
+text-align:center;
+}
+legend
+{
+color:white;
+background-color:#17395A;
+size=20%
+}
+
+label
+{
+display: inline-block;
+}
+body
+{
+background-image:url("background.jpg");
+}
+h2
+{
+color:white;
+}
+
+h6
+{
+	color:red;	
+	display: inline-block;
+}
