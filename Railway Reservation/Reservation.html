@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Railway Reservation</title>
+</head>
+<body>
+<h1>Railway Reservation Registration</h1>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="railway.js"></script>
+
+	<form name="Reservation" action="" method="">
+
+
+		<label> First Name : </label>
+		<input type="text" name="fname"  id="fname" placeholder="Enter First Name" />
+		<br><br>
+		<label>Last Name : </label>
+		<input type="text" name="lname"  id="lname" placeholder="Enter Last Name" />
+		<br><br>
+		<label>Email id</label>
+		<input type="email" name="rmail" id="rmail" placeholder="e.g abc@gmail.com" />
+		<br><br>
+		<label> Age : </label>
+		<input type="text" name="age" id="age"  placeholder="Enter The Age" required max="60" />
+		<br><br>
+		<label>Destination :</label>
+		<input type="text" name="destn"  id="destn"  placeholder="Enter Destination" />
+		<br><br>
+		<label> Boarding :</label>
+		<input type="text" name="source" id="source" placeholder="Enter Boarding location" />
+		<br><br>
+		<label>Train number :</label>
+		<input type="text" name="Tno" id"tno" placeholder="Enter train number" />
+		<br><br>
+		<button type="submit"> Register</button>
+		<script>
+	
+	$(function(){
+	$("form[name='Reservation']").validate({
+
+		rules:{
+				fname:"required",
+				lname:"required",
+				rmail:"required",
+				destn:"required",
+				Tno:{
+					required :true,
+					maxlength:5,
+					minlength:5
+					},
+				source:"required",
+				},
+	messages:{
+				fname:"Please enter the name",
+				lname:"Please enter the last name",
+				rmail:"please enter the correct mail id",
+				age:{
+					max:"You are senior citizion"
+					},
+				destn:" Please Enter the destination",
+				source:"Please enter the bording location",
+				Tno:{
+					required:"Please enter train number",
+					maxlength:"maxlength should be 5",
+					minlength:"minlength should be 5"
+					}
+
+			}
+		});
+});
+
+
+	</script>
+		
+
+	</form>
+
+</body>
+</html>
