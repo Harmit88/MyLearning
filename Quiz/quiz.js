@@ -14,7 +14,7 @@
 	 	//form.submit();
 	 //} 
 }*/
- function Validate()
+ function validate()
  {
 var radioval = $('input[name="place"]:checked');
 var radioval1 = $('input[name="College"]:checked');

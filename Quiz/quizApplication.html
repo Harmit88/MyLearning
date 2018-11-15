@@ -4,10 +4,12 @@
 	<title>Quiz Application</title>
 </head>
 <body>
-	<script type="text/javascript" src="quiz.js"></script>
+	<!--<script type="text/javascript" src="quiz.js"></script> -->
+	<script type="text/javascript" src="Test_New.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 	<link rel="stylesheet" href="format.css">
+	<link rel="stylesheet" href="format_new.css">
 	<style>
 		#Mybar{
 
@@ -24,48 +26,48 @@
 
 	
 	<!--<form name="Quiz" action="Score.html" method="POST" id="test" >  -->
-	<form name="Quiz" id="test" action="" id="test"> 
+	<form name="Quiz" id="test" action="" > 
 	<h4>Q1. The Centre for Cellular and Molecular Biology is situated at </h4>
-	<label id="Patna"><input type="radio" name="place" value="Patna" >Patna</label>
-	<label id="Jaipur"><input type="radio" name="place" value="Jaipur" >Jaipur</label>
-	<label id="paty"><input type="radio" name="place" value="Hyderabad" >Hyderabad</input></label>
-	<label id="New Delhi"><input type="radio" name="place" value="New Delhi" >New Delhi</label>
+	<input type="radio" name="1" value="Patna" id="11" /><label for ="11">Patna</label>
+	<input type="radio" name="1" value="Jaipur" id="12" /><label for ="12">Jaipur</label>
+	<input type="radio" name="1" value="Hyderabad" id="13" /><label for ="13">Hyderabad</input></label>
+	<input type="radio" name="1" value="New Delhi" id="14" /><label for ="14">New Delhi</label>
 	<br><br>
 	<span id="error1"></span>
 
 	<h4>Q2. Where is the Railway Staff College located? </h4>
-	<label id="Pune"><input type="radio" name="College" value="Pune">Pune</label>
-	<label id="Allahabad"><input type="radio" name="College" value="Allahabad">Allahabad</label>
-	<label id="Vadodara"><input type="radio" name="College" value="Vadodara">Vadodara</label>
-	<label id="Delhi"><input type="radio" name="College" value="Delhi">Delhi</label>
+	<input type="radio" name="2" value="Pune" id="21" /><label for ="21">Pune</label>
+	<input type="radio" name="2" value="Allahabad" id="22" /><label for ="22">Allahabad</label>
+	<input type="radio" name="2" value="Vadodara" id="23" /><label for ="23">Vadodara</label>
+	<input type="radio" name="2" value="Delhi". id="24" /><label for ="24">Delhi</label>
 	<br><br>
 	<span id="error2"></span>
 	<h4>Q3.The famous Dilwara Temples are situated in </h4>
-	<label id="Uttar Pradesh"><input type="radio" name="Temples" value="Uttar Pradesh">Uttar Pradesh</label>
-	<label id="Rajasthan"><input type="radio" name="Temples" value="Rajasthan">Rajasthan</label>
-	<label id="Maharashtra"><input type="radio" name="Temples" value="Maharashtra">Maharashtra</label>
-	<label id="Madhya Pradesh"><input type="radio" name="Temples" value="Madhya Pradesh">Madhya Pradesh</label>
+	<input type="radio" name="3" value="Uttar Pradesh" id="31" /><label for ="31">Uttar Pradesh</label>
+	<input type="radio" name="3" value="Rajasthan" id="32" /><label for="32">Rajasthan</label>
+	<input type="radio" name="3" value="Maharashtra" id="33" /><label for ="33">Maharashtra</label>
+	<input type="radio" name="3" value="Madhya Pradesh" id="34" /><label for ="34">Madhya Pradesh</label>
 	<br><br>
 	<span id="error3"></span>
 	<h4>Q4.Wadia Institute of Himalayan Geology is located at </h4>
-	<label id="Delhi1"><input type="radio" name="university" value="Delhi">Delhi</label>
-	<label id="Shimla"><input type="radio" name="university" value="Shimla">Shimla</label>
-	<label id="Dehradun"><input type="radio" name="university" value="Dehradun">Dehradun</label>
-	<label id="Kulu"><input type="radio" name="university" value="Kulu">Kulu</label>
+	<input type="radio" name="4" value="Delhi" id="41" /><label for ="41">Delhi</label>
+	<input type="radio" name="4" value="Shimla" id="42" /><label for ="42">Shimla</label>
+	<input type="radio" name="4" value="Dehradun" id="43" /><label for ="43">Dehradun</label>
+	<input type="radio" name="4" value="Kulu" id="44" /><label for ="44">Kulu</label>
 	<br><br>
 	<span id="error4"></span>
 	
 	<h4>Q5.The headquarters of the National Power Training institute is located in</h4>
-	<label id="Pune1"><input type="radio" name="headquarter" value="Pune">Pune</label>
-	<label id="Bhopal"><input type="radio" name="headquarter" value="Bhopal">Bhopal</label>
-	<label id="Faridabad"><input type="radio" name="headquarter" value="Faridabad">Faridabad</label>
-	<label id="Lucknow"><input type="radio" name="headquarter" value="Lucknow">Lucknow</label>
+	<input type="radio" name="5" value="Pune" id="51" /><label for ="51">Pune</label>
+	<input type="radio" name="5" value="Bhopal" id="52" /><label for ="52">Bhopal</label>
+	<input type="radio" name="5" value="Faridabad" id="53" /><label for ="53">Faridabad</label>
+	<input type="radio" name="5" value="Lucknow" id="54" /><label for ="54">Lucknow</label>
 	<br><br>
 	<span id="error5"></span>
 	<br><br>
 	
-	<input type="button" name="Me" value="Submit" onclick="Validate();">
-	<!-- <input type="button" name="Next" value="Next" onclick="progressbar();"> -->
+	<input type="button" name="Me" value="Submit" onclick="validate();">
+	<!-- <in5put type="button" name="Next" value="Next" onclick="progressbar();"> -->
 	<!--<button type="submit" onclick="Validate();">Submit</button> -->
 </div>
 </form>
@@ -75,7 +77,7 @@
 <!--<h3 align="center"> Total Question &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; 5 </h3>
 <h3 align="center"> Correct Answer : <span id ="ans_correct"> </span> </h3>
 <h3 align="center"> Wrong Answer &nbsp;: <span id ="ans_wrong"> </span> </h3>	 -->
-<h3 align="center"> Total Score &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="Score"></span></h3>
+<div id="disp"><h3 align="center"> Total Score &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="Score"></span></h3></div>
 <p id="message"></p>
 <p align="center"><img id="picture" width="400px"></p>
 </div>
