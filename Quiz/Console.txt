@@ -1,0 +1,5 @@
+[Log] SBBrowserInject {siteHost: "www.swagbucks.com", initializedGetID: false, completedFrameUrls: [], isLocalStoragePreset: function, getLocalStorage: function, …}SBBrowserInject (SBPageExtension.js, line 3)
+[Log] PAGEEXT FINISHED: browserInject=[object Object] (SBPageExtension.js, line 1954)
+[Log] evt with no data: [object Object] (SBBrowserInjectSafari.js, line 135)
+[Log] Angular is running in the development mode. Call enableProdMode() to enable the production mode. (vendor.js, line 46170)
+[Log] evt with no data: [object Object] (SBBrowserInjectSafari.js, line 135)

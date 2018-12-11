@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> Homepage</title>
+<link rel="stylessheet" type="text/css" href="styles.css" media="screen">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<form id="loginForm" method="POST" action="Welcome.html">
+<!--<div align='center'> -->
+<center><h2>Login here</h2></center>
+<fieldset>
+<br>
+<br>
+	<!-- <legend> <h3>Login Here</h3></legend> > -->
+
+	User Name :<input type="text" id="name"  class="form-control input-sm form-group-sm"/>
+	<br><span id="error0"></span>
+	<!--<div id="error0"></div><br> --><br>
+	<b>Password : </b><input type="password" id="password" /><br>
+	<span id="error1"></span>
+	<br>
+	<input type="button" onclick="userValidation();" value="Submit" />
+	<input type="button"  onclick="registerRedirect();" value="Register" />
+	<p>
+<br>
+	
+	<!--<div id="error1"></div><br> <div id="error3"></div> -->
+	
+	<!--<p><label><input type="checkbox"  value="input" checked>Remember Me</label></p>
+	<p><label><input type="button" onClick="userValidation('login');" value="Submit" id="login"></label>
+       <label><input type="button" onClick="userValidation('register');" value="Register" id="register"></label> -->
+	
+	<!-- <p><button type="button" value="submit">Login </button> -->
+</fieldset>
+<div>
+</form>
+<script type="text/javascript" src="validation1.js"></script>	
+</body>
+
+</html>
